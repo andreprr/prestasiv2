@@ -338,9 +338,38 @@ class FormInputController extends Controller
         );
 
         $templateProcessor->setValue(
-            ['applicantsjob_id','institution', 'research_basis', 'research_title', 'research_fields', 'research_location', 'team_leader', 'team_members', 'number_applicants_research_letter', 'date_applicants_research_letter', 'regard_applicants_research_letter'],
-            [$result->applicantsjob_id, $result->institution, $result->research_basis, $result->research_title, $result->research_fields, $result->research_location, $result->team_leader, $result->team_members, $result->number_applicants_research_letter, $result->date_applicants_research_letter, $result->regard_applicants_research_letter]
+            [
+                'applicantsjob_id',
+                'institution', 
+                'research_basis', 
+                'research_title', 
+                'research_fields', 
+                'research_location', 
+                'team_leader', 
+                'team_members', 
+                'number_applicants_research_letter', 
+                'date_applicants_research_letter', 
+                'regard_applicants_research_letter', 
+                'start_at', 
+                'finish_at'
+            ],
+            [
+                $result->applicantsjob_id, 
+                $result->institution, 
+                $result->research_basis, 
+                $result->research_title, 
+                $result->research_fields, 
+                $result->research_location, 
+                $result->team_leader, 
+                $result->team_members, 
+                $result->number_applicants_research_letter, 
+                $result->date_applicants_research_letter, 
+                $result->regard_applicants_research_letter, 
+                $result->start_at, 
+                $result->finish_at
+            ]
         );
+
 
         $filename = 'draft_suket_penelitian_' . $uniqid . '.docx';
         $temp_file = tempnam(sys_get_temp_dir(), 'PHPWord');
