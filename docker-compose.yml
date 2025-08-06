@@ -1,0 +1,9 @@
+services:
+  frankenphp:
+    build:
+      context: .
+    ports:
+      - "8016:8016"
+    volumes:
+      - .:/app
+    restart: always

@@ -1,0 +1,8 @@
+[global]
+document_root = "./public"
+
+[[apps]]
+address = "0.0.0.0:8080"
+bootstrap = "./worker.php"
+workers = 4  # Number of worker processes
+
