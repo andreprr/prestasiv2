@@ -10,7 +10,7 @@
     <!-- laravel CRUD token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logos/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logos/logo-app-sm.png') }}">
     <meta name="theme-color" content="#ffffff">
 
     @include('layouts/landing/styles')

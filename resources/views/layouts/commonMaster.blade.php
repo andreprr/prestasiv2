@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logos/logo-app-sm.png') }}">
 
   <title>@yield('title') | {{ config('app.name') }} </title>
 
